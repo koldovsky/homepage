@@ -1,0 +1,63 @@
+body {
+	background-color:#1A1A1A;
+	color:#B3B3B3;	
+	margin: 0;
+}
+
+#iconside {
+	float: left;
+	width: 50;
+	height: 800;
+	background-color: #2D2D2D;
+}
+
+#navside {
+	float: left;
+	width: 150;
+	height: 800;
+	background-color: #212122;	
+}
+
+.icon {
+	position: relative;
+	top: 8;
+	left: 8;
+}
+
+.l1 {	
+	position: relative;
+	left: 5px;
+}
+
+.l2 {	
+	position: relative;
+	left: 30px;
+}
+
+.l3 {	
+	position: relative;
+	left: 60px;
+}
+
+.l4 {	
+	position: relative;
+	left: 90px;
+}
+
+p {
+	margin-top: 0.1em; /* Отступ сверху */
+    margin-bottom: 0.5em; /* Отступ снизу */
+}
+
+.c1 {
+	color: aqua;
+}
+.c2 {
+	color: blueviolet;
+}
+.c3 {
+	color: crimson;
+}
+.c4 {
+	color: floralwhite;
+}
