@@ -1,6 +1,6 @@
 body {
 	background-color:#1A1A1A;
-	color:#B3B3B3;	
+	//color:#B3B3B3;	
 	margin: 0;
 }
 
@@ -45,19 +45,19 @@ body {
 }
 
 p {
-	margin-top: 0.1em; /* Отступ сверху */
-    margin-bottom: 0.5em; /* Отступ снизу */
+	//margin-top: 0.1em; /* Отступ сверху */
+   // margin-bottom: 0.5em; /* Отступ снизу */
 }
 
 .c1 {
-	color: aqua;
+	color: deepskyblue;
 }
 .c2 {
-	color: blueviolet;
+	color: #B77FDB;
 }
 .c3 {
-	color: crimson;
+	color: #5A960A;
 }
 .c4 {
-	color: floralwhite;
+	color: darkgrey;
 }
