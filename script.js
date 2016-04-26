@@ -12,7 +12,7 @@ function gimmeLabel(class1, class2, string) {
 	var letter;
 	for (var i = 0; i < string.length; i++) {
 		letter = string[i];
-		setTimeout(label.innerHTML += letter, 500); //в этом месте задержки нет :(
+		setTimeout(function() {label.innerHTML += letter}, 500); //в этом месте задержки нет :(
 	}
 }
 
