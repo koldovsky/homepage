@@ -1,58 +1,64 @@
 body {
-	background-color:#1A1A1A;
+	background-color: #212122;
 	//color:#B3B3B3;	
 	margin: 0;
 	padding: 0;
 	font-family: monospace;
-	//display: -webkit-flex;
-	//display: -moz-flex;
-  	//display: flex;	
+	display: -webkit-flex;
+	display: -moz-flex;
+  	display: flex;
+	flex: 1;
+	-webkit-flex: 1;
 }
 
 #iconside {
 	position: absolute;
-	width: 50;
-	height: 100%;
+	width: 40px;
+	height: 600px;
 	background-color: #2D2D2D;
 }
 
 #navside {
 	position: absolute;
-	margin-left: 50;
-	width: 150;
-	height: 100%;
+	margin-left: 40px;
+	width: 150px;
+	height: 600px;
 	background-color: #212122;	
 }
 
 .icon {
 	position: relative;
-	top: 8;
-	left: 8;
+	top: 6px;
+	left: 4px;
 }
 
 .l1 {	
 	position: relative;
-	left: 5px;
+	//left: 5px;
+	text-indent: 20px;
 }
 
 .l2 {	
 	position: relative;
-	left: 30px;
+	//left: 40px;
+	text-indent: 40px;
 }
 
 .l3 {	
 	position: relative;
-	left: 60px;
+	//left: 60px;
+	text-indent: 60px;
 }
 
 .l4 {	
 	position: relative;
-	left: 90px;
+	//left: 90px;
+	text-indent: 80px;
 }
 
 p {
-	margin-top: 0.7em; /* Отступ сверху */
-    margin-bottom: 0.7em; /* Отступ снизу */
+	margin-top: 0.5em; /* Отступ сверху */
+    margin-bottom: 0.5em; /* Отступ снизу */
 }
 
 .c1 {
@@ -72,29 +78,51 @@ p {
 }
 
 article {
-	margin-left: 200;
-	height: 100%;	
+	position: relative;
+	//margin-left: px;
+	//margin-top: 20px;
+	//height: 200px;	
 	overflow-x: hidden;
 	overflow-y: auto;
 	color: beige;
+	background-color: #2D2D2D;	
 }
 
-::-webkit-scrollbar-thumb{
-    border-width:1px 1px 1px 2px;
-    border-color: #777;
-    background-color: #aaa;
-}
-
-textarea {
-	height: 100px;
-	width: 100px;
-	background-color:#1A1A1A;
-	border-color: #1A1A1A;
-	color: aqua;
-}
-
-span {
+/*span {
 	color: aliceblue;
+}*/
+
+#tab {
+	//margin-left: 190px;
+	color: aliceblue;
+	min-width: 150px;
+	max-width: 170px;
+	height: 25px;
+	/*clear: right;*/
+	background-color: #2D2D2D;
+}
+
+#greendot {
+	height: 10px;
+	position: relative;
+	//margin-top: 8px;
+}
+
+#column {
+	-webkit-flex: 1;
+    flex: 1;
+	margin-left: 190px;
+}
+
+#row {
+	display: -webkit-flex;
+	display: flex;
+}
+
+#stringNumber {
+	color: darkgrey;
+	text-align: right;
+	background-color: #2D2D2D;
 }
 
 .typed-cursor {
@@ -105,15 +133,9 @@ span {
 }
 
 @keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+	0% {opacity: 1;	}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 @-webkit-keyframes blink {

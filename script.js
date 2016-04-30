@@ -2,7 +2,7 @@
 
 //function startTheDance() {}
 
-function gimmeSpan(class1, class2, string) {
+function gimmeSpan(class1, class2, tagString, string, breaks) {
 	var newspan = document.createElement("span");
 	var t = document.createTextNode('yes');
 	newspan.appendChild(t);
@@ -12,7 +12,7 @@ function gimmeSpan(class1, class2, string) {
 	$(function () {
 		$(newspan).typed({
 			strings: [string],
-			typeSpeed: 20,
+			typeSpeed: 30,
 			startDelay: 1000
 		});
 	});
@@ -22,4 +22,4 @@ function gimmeBr() {
 	
 }
 
-gimmeSpan('c2', 'l4', ' you did it!');
+gimmeSpan('c2', 'l3', 'notag', ' lets go! ');
