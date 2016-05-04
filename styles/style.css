@@ -1,6 +1,6 @@
 body {
 	background-color: #212122;
-	//color:#B3B3B3;	
+	color:#B3B3B3;	
 	margin: 0;
 	padding: 0;
 	font-family: monospace;
@@ -35,30 +35,31 @@ body {
 .l1 {	
 	position: relative;
 	//left: 5px;
-	text-indent: 20px;
+	text-indent: 30px;
 }
 
 .l2 {	
 	position: relative;
 	//left: 40px;
-	text-indent: 40px;
+	text-indent: 50px;
 }
 
 .l3 {	
 	position: relative;
 	//left: 60px;
-	text-indent: 60px;
+	text-indent: 70px;
 }
 
 .l4 {	
 	position: relative;
 	//left: 90px;
-	text-indent: 80px;
+	text-indent: 90px;
 }
 
 p {
 	margin-top: 0.5em; /* Отступ сверху */
     margin-bottom: 0.5em; /* Отступ снизу */
+	text-indent: 20px;
 }
 
 .c1 {
@@ -84,21 +85,16 @@ article {
 	//height: 200px;	
 	overflow-x: hidden;
 	overflow-y: auto;
-	color: beige;
+	//color: beige;
 	background-color: #2D2D2D;	
 }
-
-/*span {
-	color: aliceblue;
-}*/
 
 #tab {
 	//margin-left: 190px;
 	color: aliceblue;
 	min-width: 150px;
 	max-width: 170px;
-	height: 25px;
-	/*clear: right;*/
+	height: 25px;	
 	background-color: #2D2D2D;
 }
 
@@ -120,9 +116,14 @@ article {
 }
 
 #stringNumber {
+	width: 1.1em;
 	color: darkgrey;
 	text-align: right;
-	background-color: #2D2D2D;
+	background-color: #2D2D2D;	
+}
+
+#stringNumber p {
+	text-indent: 0px;
 }
 
 .typed-cursor {
