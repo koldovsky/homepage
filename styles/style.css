@@ -1,14 +1,9 @@
 body {
-	background-color: #212122;
-	color:#B3B3B3;	
+	background-color: #1A1A1A;
+	color: #B3B3B3;
 	margin: 0;
 	padding: 0;
 	font-family: monospace;
-	display: -webkit-flex;
-	display: -moz-flex;
-  	display: flex;
-	flex: 1;
-	-webkit-flex: 1;
 	min-height: 600px;
 	height: 100%;
 	min-width: 950px;
@@ -28,7 +23,7 @@ body {
 	width: 150px;
 	min-height: 600px;
 	height: 100%;
-	background-color: #212122;
+	background-color: #1A1A1A;
 	font-size: 1.0em;
 }
 
@@ -38,27 +33,19 @@ body {
 	left: 8px;
 }
 
-.l1 {	
-	position: relative;
-	//left: 5px;
+.l1 {
 	text-indent: 30px;
 }
 
-.l2 {	
-	position: relative;
-	//left: 40px;
+.l2 {
 	text-indent: 50px;
 }
 
-.l3 {	
-	position: relative;
-	//left: 60px;
+.l3 {
 	text-indent: 70px;
 }
 
-.l4 {	
-	position: relative;
-	//left: 90px;
+.l4 {
 	text-indent: 90px;
 }
 
@@ -71,41 +58,42 @@ body {
 }
 
 .navC1 {
-	color: deepskyblue;
+	color: #FF4E4C;
 }
 
 .navC2 {
-	color: #B77FDB;
+	color: #E8833A;
 }
 
 p {
-	margin-top: 0.5em; /* Отступ сверху */
-    margin-bottom: 0.5em; /* Отступ снизу */
-	text-indent: 20px;	
+	margin-top: 0.5em;
+	/* Отступ сверху */
+	margin-bottom: 0.5em;
+	/* Отступ снизу */
+	text-indent: 20px;
 }
 
-
 .c1 {
-	color: deepskyblue;
+	color: #FF4E4C;
 }
 
 .c2 {
-	color: #B77FDB;
+	color: #E8833A;
 }
 
 .c3 {
-	color: #5A960A;
+	color: #FFE79D;
 }
 
 .c4 {
-	color: darkgrey;
+	color: #F3F3F3;
 }
 
-article {		
+article {
 	background-color: #2D2D2D;
 	font-size: 1.1em;
-	min-height: 600px;	
-	min-width: 400px;
+	//min-height: 600px;	
+	//min-width: 400px;
 	height: 100%;
 	width: 100%;
 }
@@ -116,17 +104,15 @@ article {
 
 #tab {
 	//margin-left: 190px;
-	color: aliceblue;
-	min-width: 150px;
+	color: #F3F3F3;
 	max-width: 170px;
-	height: 25px;	
+	height: 25px;
 	background-color: #2D2D2D;
 }
 
 #tab span {
 	vertical-align: text-top;
 	margin-left: 20px;
-	
 }
 
 #greendot {
@@ -138,7 +124,7 @@ article {
 
 #column {
 	-webkit-flex: 1;
-    flex: 1;
+	flex: 1;
 	margin-left: 200px;
 	min-height: 600px;
 	height: 100%;
@@ -173,19 +159,37 @@ article {
 }
 
 @keyframes blink {
-	0% {opacity: 1;	}
-	50% {opacity: 0;}
-	100% {opacity: 1;}
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @-webkit-keyframes blink {
-	0% {opacity: 1;	}
-	50% {opacity: 0;}
-	100% {opacity: 1;}
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @-moz-keyframes blink {
-	0% {opacity: 1;}
-	50% {opacity: 0;}
-	100% {opacity: 1;}
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
