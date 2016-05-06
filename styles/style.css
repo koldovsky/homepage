@@ -9,27 +9,33 @@ body {
   	display: flex;
 	flex: 1;
 	-webkit-flex: 1;
+	min-height: 600px;
+	height: 100%;
+	min-width: 950px;
 }
 
 #iconside {
 	position: absolute;
-	width: 40px;
-	height: 600px;
+	width: 50px;
+	min-height: 600px;
+	height: 100%;
 	background-color: #2D2D2D;
 }
 
 #navside {
 	position: absolute;
-	margin-left: 40px;
+	margin-left: 50px;
 	width: 150px;
-	height: 600px;
-	background-color: #212122;	
+	min-height: 600px;
+	height: 100%;
+	background-color: #212122;
+	font-size: 1.0em;
 }
 
 .icon {
 	position: relative;
-	top: 6px;
-	left: 4px;
+	margin-top: 12px;
+	left: 8px;
 }
 
 .l1 {	
@@ -56,11 +62,28 @@ body {
 	text-indent: 90px;
 }
 
+.navL1 {
+	text-indent: 20px;
+}
+
+.navL2 {
+	text-indent: 40px;
+}
+
+.navC1 {
+	color: deepskyblue;
+}
+
+.navC2 {
+	color: #B77FDB;
+}
+
 p {
 	margin-top: 0.5em; /* Отступ сверху */
     margin-bottom: 0.5em; /* Отступ снизу */
-	text-indent: 20px;
+	text-indent: 20px;	
 }
+
 
 .c1 {
 	color: deepskyblue;
@@ -78,15 +101,17 @@ p {
 	color: darkgrey;
 }
 
-article {
-	position: relative;
-	//margin-left: px;
-	//margin-top: 20px;
-	//height: 200px;	
-	overflow-x: hidden;
-	overflow-y: auto;
-	//color: beige;
-	background-color: #2D2D2D;	
+article {		
+	background-color: #2D2D2D;
+	font-size: 1.1em;
+	min-height: 600px;	
+	min-width: 400px;
+	height: 100%;
+	width: 100%;
+}
+
+#main p {
+	margin-left: 0px;
 }
 
 #tab {
@@ -98,28 +123,42 @@ article {
 	background-color: #2D2D2D;
 }
 
+#tab span {
+	vertical-align: text-top;
+	margin-left: 20px;
+	
+}
+
 #greendot {
-	height: 10px;
+	height: 8px;
 	position: relative;
-	//margin-top: 8px;
+	margin-top: 10px;
+	left: 80px;
 }
 
 #column {
 	-webkit-flex: 1;
     flex: 1;
-	margin-left: 190px;
+	margin-left: 200px;
+	min-height: 600px;
+	height: 100%;
 }
 
 #row {
 	display: -webkit-flex;
 	display: flex;
+	min-height: 600px;
+	height: 100%;
 }
 
 #stringNumber {
 	width: 1.1em;
 	color: darkgrey;
 	text-align: right;
-	background-color: #2D2D2D;	
+	background-color: #2D2D2D;
+	font-size: 1.1em;
+	min-height: 600px;
+	height: 100%;
 }
 
 #stringNumber p {

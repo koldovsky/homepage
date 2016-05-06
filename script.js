@@ -1,29 +1,23 @@
-//document.addEventListener("DOMContentLoaded", gimmeLabel());
-
-//function startTheDance() {}
+var ROWS = 2;
 
 function gimmeSpan(class1, class2, openingTagString, closingTagString, string, breaks, before) {
-	paragraph = document.createElement("p");
+	var paragraph = document.createElement("p");
 	var newspanOne = document.createElement("span");
 	var newspanTwo = document.createElement("span");
 	var newspanThree = document.createElement("span");
-	//var t = document.createTextNode('yes');
-	var tnode = document.createTextNode(closingTagString);	
+	var tnode = document.createTextNode(closingTagString);
 	paragraph.appendChild(newspanOne);
 	paragraph.appendChild(newspanTwo);
-	//paragraph.appendChild(newspanThree);
-	//newspan.appendChild(t);
-	newspanTwo.setAttribute('class', 'c4');	
-		
-	//main.appendChild(paragraph);
+	newspanTwo.setAttribute('class', 'c4');
 	
 	$(paragraph).insertBefore(before);
+	newRow();
 
 	$(function () {
 		$(newspanOne).typed({
 			strings: [openingTagString+'^30'],
-			typeSpeed: 15,
-			startDelay: 400,			
+			typeSpeed: 1,
+			startDelay: 10,
 			callback: function() {
 				paragraph.setAttribute('class', class1 + ' ' + class2);
 				$(".typed-cursor").remove();
@@ -32,140 +26,156 @@ function gimmeSpan(class1, class2, openingTagString, closingTagString, string, b
 				paragraph.appendChild(newspanThree);
 				
 				$(function () {
-					$(newspanTwo).typed({							
+					$(newspanTwo).typed({
 						strings: [string+'^100'],
-						typeSpeed: 15,
-						startDelay: 400,
+						typeSpeed: 1,
+						startDelay: 10,
 						callback: ( function() {
-							$(".typed-cursor").remove();
-							//gimmeSpan('c3', 'l3', '<mail>', '</nail>', ' nomail ',0);
-							return true;
+						$(".typed-cursor").remove();
 						})
 					});
 				});
 			}
-		});		
+		});
 	});
 }
 
 function gimmeParagraph(class1, class2, id, openingTagString, closingTagString, before) {
 	paragraphOne = document.createElement("p");
-	paragraphTwo = document.createElement("p");	
-	var tnode = document.createTextNode(closingTagString);	
-	/*if(before=='') {
-		main.appendChild(paragraphOne);
-	} else {
-		$(paragraphOne).insertBefore(before);
-	}*/
+	paragraphTwo = document.createElement("p");
+	var tnode = document.createTextNode(closingTagString);
 	$(paragraphOne).insertBefore(before);
+	newRow();
 
 	$(function () {
+		newRow();
 		$(paragraphOne).typed({
 			strings: [openingTagString+'^30'],
-			typeSpeed: 15,
-			startDelay: 400,			
+			typeSpeed: 1,
+			startDelay: 10,
 			callback: function() {
 				paragraphOne.setAttribute('class', class1 + ' ' + class2);
-				$(".typed-cursor").remove();							
+				$(".typed-cursor").remove();
 				paragraphTwo.appendChild(tnode);
-				//main.appendChild(paragraphTwo);
 				$(paragraphTwo).insertBefore(before);
 				paragraphTwo.setAttribute('class', class1 + ' ' + class2);
 				paragraphTwo.setAttribute('id', id);
+				addNav(openingTagString, 'navL2', 'navC2');
 			}
-		});		
+		});
 	});
+}
+
+function newRow() {
+	var row = document.createElement("p");
+	var rowNum = document.createTextNode(ROWS);
+	row.appendChild(rowNum);
+	stringNumber.appendChild(row);
+	ROWS++;
 }
 
 function beginning() {
 	paragraphOne = document.createElement("p");
-	paragraphTwo = document.createElement("p");	
+	paragraphTwo = document.createElement("p");
 	var tnode = document.createTextNode("</MoryaAnton>");
 	main.appendChild(paragraphOne);
+	newRow();
 
 	$(function () {
 		$(paragraphOne).typed({
-			strings: ["<MoryaAnton>"+'^30'],
-			typeSpeed: 50,
-			startDelay: 500,			
+			strings: ['<MoryaAnton>' + '^30'],
+			typeSpeed: 1,
+			startDelay: 10,
 			callback: function() {
 				paragraphOne.setAttribute('class', 'c1 l1');
 				$(".typed-cursor").remove();							
 				paragraphTwo.appendChild(tnode);
-				main.appendChild(paragraphTwo);
+				main.appendChild(paragraphTwo);				
 				paragraphTwo.setAttribute('class', 'c1 l1');
 				paragraphTwo.setAttribute('id', "manton");
+				addNav('<MoryaAnton>', 'navL1', 'navC1');
 			}
 		});		
 	});
 }
 
-fb();
-
-
-function fb() {
-	beginning();
-	setTimeout(f0, 2000);
+function addNav(string, style1, style2) {
+	var paragraph = document.createElement("p");
+	var tnode = document.createTextNode(string);
+	paragraph.appendChild(tnode);
+	navside.appendChild(paragraph);
+	paragraph.setAttribute('class', style1+' '+style2);
 }
 
-function f0() {
+fb();
+function fb() {
+	beginning();	
+	setTimeout(f0, 1000);	
+}
+
+function f0() {	
 	gimmeParagraph('c2', 'l2', 'binfo', '<basicInfo>', '</basicInfo>', '#manton');
-	setTimeout(f1, 2000);
+	setTimeout(f1, 1000);
 }
 
 function f1() {
 	gimmeSpan('c3', 'l3', '<gender>', '</gender>', ' male ', 0, '#binfo');
-	setTimeout(f2, 3000);
+	setTimeout(f2, 1000);
 }
 
 function f2() {	
 	gimmeSpan('c3', 'l3', '<birthDate>', '</birthDate>', ' 11.04.1986 ',0, '#binfo');
-	setTimeout(f3, 3000);
+	setTimeout(f3, 1300);
 }
 
-function f3() {
-	gimmeSpan('c3', 'l3', '<mail>', '</mail>', ' nomail ',0, '#binfo');
-	setTimeout(f4, 3000);
+function f3() {	
+	gimmeSpan('c3', 'l3', '<mail>', '</mail>', ' antonmorya@gmail.com ',0, '#binfo');
+	setTimeout(f4, 1300);
 }
 
 function f4() {
 	gimmeParagraph('c2', 'l2', 'edu', '<education>', '</education>', '#manton');
-	setTimeout(f5, 2000);
+	setTimeout(f5, 1000);
 }
 
 function f5() {
 	gimmeSpan('c3', 'l3', '<univercity>', '</univercity>', ' Krivoy Rog Technical University ',0, '#edu');
-	setTimeout(f6, 5500);
+	setTimeout(f6, 2200);
 }
 
 function f6() {
 	gimmeSpan('c3', 'l3', '<specs>', '</specs>', ' ELECTROTECHNICAL power supply system ',0, '#edu');
-	setTimeout(f5_1, 4500);
+	setTimeout(f5_1, 2400);
 }
 
 function f5_1() {
-	gimmeSpan('c3', 'l3', '<courses>', '</courses>', ' HTML5 Introduction to the course by SoftServe ',0, '#edu');
-	setTimeout(f7, 5500);
+	gimmeSpan('c3', 'l3', '<full-timeCourses>', '</full-timeCourses>', ' HTML5, CSS, JS Essentials  by SoftServe ',0, '#edu');
+	setTimeout(f5_2, 2500);
+}
+
+function f5_2() {
+	gimmeSpan('c3', 'l3', '<remoteCourses>', '</remoteCourses>', ' Codecademy, Lynda.com, MDN, W3C courses/lessons ',0, '#edu');
+	setTimeout(f7, 2900);
 }
 
 function f7() {
 	gimmeParagraph('c2', 'l2', 'skills', '<skills>', '</skills>', '#manton');
-	setTimeout(f8, 2000);
+	setTimeout(f8, 700);
 }
 
 function f8() {
 	gimmeSpan('c3', 'l3', '<it-based>', '</it-based>', ' HTML5, CSS, JavaScript, Java basics ',0, '#skills');
-	setTimeout(f9, 5000);
+	setTimeout(f9, 2400);
 }
 
 function f9() {
 	gimmeParagraph('c2', 'l2', 'job', '<job>', '</job>', '#manton');
-	setTimeout(f10, 2000);
+	setTimeout(f10, 700);
 }
 
 function f10() {
-	gimmeSpan('c3', 'l3', '<organization>', '</organization>', ' se Evtushenko (Providing services in the field of monitoring of vehicles) ',0, '#job');
-	setTimeout(f11, 6000);
+	gimmeSpan('c3', 'l3', '<organization>', '</organization>', ' se Evtushenko ',0, '#job');
+	setTimeout(f11, 1300);
 }
 
 function f11() {
