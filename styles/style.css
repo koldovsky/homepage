@@ -33,6 +33,68 @@ body {
 	left: 8px;
 }
 
+article {
+	background-color: #2D2D2D;
+	font-size: 1.1em;
+	//min-height: 600px;	
+	//min-width: 400px;
+	height: 100%;
+	width: 100%;
+}
+
+#main p {
+	margin-left: 0px;
+}
+
+#tab {
+	//margin-left: 190px;
+	color: #F3F3F3;
+	max-width: 170px;
+	height: 25px;
+	background-color: #2D2D2D;
+}
+
+#tab span {
+	vertical-align: text-top;
+	margin-left: 20px;
+}
+
+#greendot {
+	height: 8px;
+	position: relative;
+	margin-top: 10px;
+	left: 80px;
+}
+
+#column {
+	//-webkit-flex: 1;
+	//flex: 1;
+	margin-left: 200px;
+	min-height: 600px;
+	height: 100%;
+}
+
+#row {
+	display: -webkit-flex;
+	display: flex;
+	min-height: 600px;
+	height: 100%;
+}
+
+#stringNumber {
+	width: 1.1em;
+	color: darkgrey;
+	text-align: right;
+	background-color: #2D2D2D;
+	font-size: 1.1em;
+	min-height: 600px;
+	height: 100%;
+}
+
+#stringNumber p {
+	text-indent: 0px;
+}
+
 .l1 {
 	text-indent: 30px;
 }
@@ -89,68 +151,6 @@ p {
 	color: #F3F3F3;
 }
 
-article {
-	background-color: #2D2D2D;
-	font-size: 1.1em;
-	//min-height: 600px;	
-	//min-width: 400px;
-	height: 100%;
-	width: 100%;
-}
-
-#main p {
-	margin-left: 0px;
-}
-
-#tab {
-	//margin-left: 190px;
-	color: #F3F3F3;
-	max-width: 170px;
-	height: 25px;
-	background-color: #2D2D2D;
-}
-
-#tab span {
-	vertical-align: text-top;
-	margin-left: 20px;
-}
-
-#greendot {
-	height: 8px;
-	position: relative;
-	margin-top: 10px;
-	left: 80px;
-}
-
-#column {
-	-webkit-flex: 1;
-	flex: 1;
-	margin-left: 200px;
-	min-height: 600px;
-	height: 100%;
-}
-
-#row {
-	display: -webkit-flex;
-	display: flex;
-	min-height: 600px;
-	height: 100%;
-}
-
-#stringNumber {
-	width: 1.1em;
-	color: darkgrey;
-	text-align: right;
-	background-color: #2D2D2D;
-	font-size: 1.1em;
-	min-height: 600px;
-	height: 100%;
-}
-
-#stringNumber p {
-	text-indent: 0px;
-}
-
 .typed-cursor {
 	opacity: 1;
 	-webkit-animation: blink 0.7s infinite;
@@ -159,37 +159,19 @@ article {
 }
 
 @keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 @-webkit-keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 @-moz-keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
 }
