@@ -9,12 +9,43 @@
 		<aside id="iconside">
 			<img class="icon" alt="Info icon" src="icons/mail-boxes.png">
 			<br>
-			<img class="icon" alt="Send a message icon" src="icons/mail.png">
+			<img class="icon trigger" alt="Send a message icon" src="icons/mail.png" href="#">
 		</aside>
-		<aside id="navside"></aside>
-		<div id="column">
-			<div id="tab"><span>Resume </span><img src="icons/64px-Green_pog.svg.png" id="greendot" alt="Lus a green dot"></div>
+		<aside id="navside"></aside>	
+
+	<div class="panel">
+	<!-- Cодержимое панели отсылки сообщения -->
+		<div id="sender">
+			<form>
+				<img id="myPhoto" alt="Anton Morya's photo" src="ph01.png">
+				<img id="ytube" alt="You Tube icon" src="icons/yt.png">
+				<img id="fbook" alt="Facebook icon" src="icons/fb.png">
+				<label>
+					Your name:
+					<input type="text" id="name" />
+				</label>
+				<br><br>
+				<label>
+					E-mail for answer:
+					<input type="email" id="mail" />
+				</label>
+				<br><br>
+				<span id="messageLabel">Message:</span>
+				<br><br>
+				<input type="text" id="message" />
+				<br><br>
+				<button id="btn-send">
+					Send
+				</button>
+				<br>
+			</form>
+
+		</div>
+	</div>
 		
+		
+		<div id="column">
+			<div id="tab"><span>Resume </span><img src="icons/64px-Green_pog.svg.png" id="greendot" alt="Lus a green dot"></div>		
 			<div id="row">
 				<div id="stringNumber">	<p>1</p> </div>			
 				<article id="main"></article>
@@ -26,5 +57,14 @@
 			  crossorigin="anonymous"></script>		
 		<script src="typed.js"></script>
 		<script src="script.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$(".trigger").click(function(){
+				$(".panel").toggle("fast");
+				$(this).toggleClass("active");
+				return false;
+			});
+		});
+		</script>
 	</body>
 	</html>

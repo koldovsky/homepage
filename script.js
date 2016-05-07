@@ -174,7 +174,7 @@ function f9() {
 }
 
 function f10() {
-	gimmeSpan('c3', 'l3', '<organization>', '</organization>', ' se Evtushenko ',0, '#job');
+	gimmeSpan('c3', 'l3', '<organization>', '</organization>', ' SE Evtushenko ',0, '#job');
 	setTimeout(f11, 1300);
 }
 
