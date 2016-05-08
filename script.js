@@ -188,6 +188,7 @@ function f11() {
 //отправка сообщения на почту
 $(function() {
     $('#sendBtn').click(function(e) {
+		e.preventDefault;
         $.ajax({
             url: "https://formspree.io/anton.morya@gmail.com", 
             method: "POST",
@@ -201,7 +202,6 @@ $(function() {
         })
         .fail(function (jqXHR, textStatus) {
             alert('Error!'+textStatus);
-        });
-		e.preventDefault;
+        });		
     })	
 })
