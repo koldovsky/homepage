@@ -189,7 +189,7 @@ function f11() {
 $(function() {
     $('#sendBtn').click(function() {
         $.ajax({
-            url: "https://formspree.io/antonmorya@gmail.com", 
+            url: "https://formspree.io/anton.morya@gmail.com", 
             method: "POST",
             data: {message: message.value},
 			//data: $('#formToSend').serialize(),
