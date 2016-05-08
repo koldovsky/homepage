@@ -1,20 +1,22 @@
-<!DOCTYPE html> 
-	<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Anton Morya Homepage</title>
-		<link rel="stylesheet" type="text/css" href="styles/style.css">
-	</head>
-	<body>
-		<aside id="iconside">
-			<img class="icon" alt="Info icon" src="icons/mail-boxes.png">
-			<br>
-			<img class="icon trigger" alt="Send a message icon" src="icons/mail.png" href="#">
-		</aside>
-		<aside id="navside"></aside>	
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Anton Morya Homepage</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+	<aside id="iconside">
+		<img class="icon" alt="Info icon" src="icons/mail-boxes.png">
+		<br>
+		<img class="icon trigger" alt="Send a message icon" src="icons/mail.png" href="#">
+	</aside>
+	<aside id="navside"></aside>
 
 	<div class="panel">
-	<!-- Cодержимое панели отсылки сообщения -->
+		<!-- Cодержимое панели отсылки сообщения -->
 		<div id="sender">
 			<form id="formToSend">
 				<img id="myPhoto" alt="Anton Morya's photo" src="ph01.png">
@@ -28,16 +30,20 @@
 					Your name:
 					<input type="text" id="name" />
 				</label>
-				<br><br>
+				<br>
+				<br>
 				<label>
 					E-mail for answer:
 					<input type="email" id="replyto" />
 				</label>
-				<br><br>
+				<br>
+				<br>
 				<span id="messageLabel">Message:</span>
-				<br><br>
+				<br>
+				<br>
 				<input type="text" id="message" />
-				<br><br>
+				<br>
+				<br>
 				<button id="sendBtn">
 					Send
 				</button>
@@ -45,29 +51,29 @@
 			</form>
 
 		</div>
-	</div>	
-		
-		<div id="column">
-			<div id="tab"><span>Resume </span><img src="icons/64px-Green_pog.svg.png" id="greendot" alt="Lus a green dot"></div>		
-			<div id="row">
-				<div id="stringNumber">	<p>1</p> </div>			
-				<article id="main"></article>
+	</div>
+
+	<div id="column">
+		<div id="tab"><span>Resume </span><img src="icons/64px-Green_pog.svg.png" id="greendot" alt="Lus a green dot"></div>
+		<div id="row">
+			<div id="stringNumber">
+				<br><p>1</p>
 			</div>
+			<article id="main"><br></article>
 		</div>
-		<script
-			  src="http://code.jquery.com/jquery-2.2.3.min.js"
-			  integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-			  crossorigin="anonymous"></script>		
-		<script src="typed.js"></script>
-		<script src="script.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function(){
-			$(".trigger").click(function(){
+	</div>
+	<script src="http://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<script src="typed.js"></script>
+	<script src="script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".trigger").click(function () {
 				$(".panel").toggle("fast");
 				$(this).toggleClass("active");
 				return false;
 			});
 		});
-		</script>
-	</body>
-	</html>
+	</script>
+</body>
+
+</html>
