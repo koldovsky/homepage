@@ -107,6 +107,8 @@ function addNav(string, style1, style2) {
 	paragraph.setAttribute('class', style1+' '+style2);
 }
 
+
+// Болк запуска скриптов "печати" текста
 fb();
 function fb() {
 	beginning();	
@@ -182,3 +184,22 @@ function f11() {
 	gimmeSpan('c3', 'l3', '<position>', '</position>', ' Tech support specialist ',0, '#job');
 	//setTimeout(f10, 3000);
 }
+
+//отправка сообщения на почту
+$(function() {
+    $('#sendBtn').click(function() {
+        $.ajax({
+            url: "https://formspree.io/antonmorya@gmail.com", 
+            method: "POST",
+            data: {message: message.value},
+			//data: $('#formToSend').serialize(),
+            dataType: "json"
+        })
+        .done(function () {
+            alert('Sent');
+        })
+        .fail(function (jqXHR, textStatus) {
+            alert('<h1>Error!</h1><br>'+textStatus);
+        });
+    })
+})
