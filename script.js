@@ -188,18 +188,19 @@ function f11() {
 //отправка сообщения на почту
 $(function() {
     $('#sendBtn').click(function() {
-        $.ajax({
+         $.ajax({
             url: "https://formspree.io/anton.morya@gmail.com", 
             method: "POST",
-            data: {message: message.value},
-			//data: $('#formToSend').serialize(),
+            data: {message: name.value + ': ' + message.value,
+                email: replyto.value,
+            },
             dataType: "json"
         })
         .done(function () {
             alert('Sent');
         })
         .fail(function (jqXHR, textStatus) {
-            alert('<h1>Error!</h1><br>'+textStatus);
+            alert('Error!'+textStatus);
         });
     })
 })
