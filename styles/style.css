@@ -290,6 +290,10 @@ border-bottom: 1px solid #ffffff;
 	height: 50px;
 }
 
+a {
+	border: 0;
+}
+
 a.trigger{
 position: fixed;
 text-decoration: none;
