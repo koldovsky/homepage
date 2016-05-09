@@ -15,7 +15,7 @@ function gimmeSpan(class1, class2, openingTagString, closingTagString, string, b
 
 	$(function () {
 		$(newspanOne).typed({
-			strings: [openingTagString+'^30'],
+			strings: [openingTagString+'^10'],
 			typeSpeed: 1,
 			startDelay: 10,
 			callback: function() {
@@ -27,9 +27,9 @@ function gimmeSpan(class1, class2, openingTagString, closingTagString, string, b
 				
 				$(function () {
 					$(newspanTwo).typed({
-						strings: [string+'^100'],
+						strings: [string+'^30'],
 						typeSpeed: 1,
-						startDelay: 10,
+						startDelay: 5,
 						callback: ( function() {
 						$(".typed-cursor").remove();
 						})
@@ -50,9 +50,9 @@ function gimmeParagraph(class1, class2, id, openingTagString, closingTagString, 
 	$(function () {
 		newRow();
 		$(paragraphOne).typed({
-			strings: [openingTagString+'^30'],
+			strings: [openingTagString+'^10'],
 			typeSpeed: 1,
-			startDelay: 10,
+			startDelay: 5,
 			callback: function() {
 				paragraphOne.setAttribute('class', class1 + ' ' + class2);
 				$(".typed-cursor").remove();
