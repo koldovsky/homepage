@@ -205,3 +205,13 @@ $(function() {
         });		
     })	
 })
+
+$(document).ready(function () {
+			$("#info").click(function () {
+				if ($(".panel").css('display') == 'block') {
+				$(".panel").toggle("fast");
+				$(this).toggleClass("active");
+				return false;
+			}
+			});
+		});
